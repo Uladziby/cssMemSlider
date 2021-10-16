@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     height: 90%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+    box-shadow: 2px 6px 10px rgb(0 0 0 / 40%);
 }
 .slider_slides__block-text {
     display: flex;
@@ -66,6 +66,7 @@ body {
 }
 .label:hover > .inlbl {
     background: white;
+    border: 2px solid white;
 }
 .radio_btn {
     background-color: blanchedalmond;
@@ -127,5 +128,20 @@ input[name="radio-btn"] {
     border-radius: 10px;
     border: 2px solid #666666;
     padding: 7px;
-    margin: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    .slider_control__btns {
+        display: flex;
+        position: absolute;
+        right: 35%;
+        top: 75%;
+    }
+    .slider_slides__block-img {
+        display: flex;
+        justify-content: center;
+        height: 90%;
+        box-shadow: none;
+    }
 }
