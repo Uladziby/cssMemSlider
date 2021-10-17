@@ -56,12 +56,14 @@ main {
 .slider_control {
     display: flex;
     justify-content: center;
+
 }
 
 .slider_control__btns {
     display: flex;
     right: 10%;
     top: 75%;
+
 }
 
 /* .slider_control__btns div:hover {
@@ -130,6 +132,7 @@ input[name="radio-btn"] {
 }
 .label {
     cursor: pointer;
+
 }
 .inlbl {
     cursor: pointer;
@@ -137,19 +140,20 @@ input[name="radio-btn"] {
     border: 2px solid #666666;
     padding: 7px;
     margin: 5px;
+   
+}
+.inlbl:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 450px) {
-    .slider_control__btns {
-        display: flex;
-        position: absolute;
-        right: 35%;
-        top: 75%;
+    .slider_slides {
+        height: 70%;
     }
     .slider_slides__block-img {
         display: flex;
         justify-content: center;
-        height: 90%;
+        height: 70%;
         box-shadow: none;
     }
 }
